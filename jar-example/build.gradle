@@ -1,0 +1,8 @@
+plugins {
+    id "java"
+    id "org.springframework.boot" version "1.5.1.RELEASE"
+}
+
+dependencies {
+    compile "org.joinfaces:jsf-spring-boot-starter:2.3.6"
+}

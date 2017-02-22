@@ -1,0 +1,4 @@
+include 'jar-example'
+include 'war-example'
+
+rootProject.name = 'joinfaces-gradle-example'
