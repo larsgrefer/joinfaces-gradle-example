@@ -2,4 +2,11 @@ allprojects {
     repositories {
         jcenter()
     }
+
+    plugins.withId("checkstyle") {
+        checkstyle.toolVersion = "7.+"
+        checkstyle.configFile = rootProject.file("${rootProject.projectDir}/config/checkstyle/checkstyle.xml")
+    }
 }
+
+

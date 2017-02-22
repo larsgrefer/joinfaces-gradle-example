@@ -1,6 +1,7 @@
 plugins {
     id "java"
     id "org.springframework.boot" version "1.5.1.RELEASE"
+    id "checkstyle"
 }
 
 dependencies {
