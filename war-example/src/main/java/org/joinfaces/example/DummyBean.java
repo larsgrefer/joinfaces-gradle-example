@@ -4,6 +4,9 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 
+/**
+ * @author Lars Grefer
+ */
 @Component("dummy")
 public class DummyBean {
 

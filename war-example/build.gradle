@@ -6,4 +6,6 @@ plugins {
 dependencies {
     compile "org.joinfaces:jsf-spring-boot-starter:2.3.6"
     providedRuntime "org.springframework.boot:spring-boot-starter-tomcat"
+
+    testCompile "org.springframework.boot:spring-boot-starter-test"
 }
