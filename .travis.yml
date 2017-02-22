@@ -1,2 +1,16 @@
 language: java
 jdk: oraclejdk8
+
+install:
+- ./gradlew clean
+- wget http://ftp.fau.de/apache/tomcat/tomcat-8/v8.5.11/bin/apache-tomcat-8.5.11.zip
+- unzip apache-tomcat-8.5.11.zip
+
+script:
+- ./gradlew build
+- apache-tomcat-8.5.11/webapps/catalina.sh run &
+- cp war-example/build/libs/war-example.war apache-tomcat-8.5.11/webapps/
+- sleep 10
+- wget localhost:8080/index.xhtml
+
+
