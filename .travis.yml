@@ -12,7 +12,7 @@ cache:
     - $HOME/.gradle/wrapper/
 
 env:
-- TOMCAT_VERSION=8.5.11
+- TOMCAT_VERSION=8.5.14
 - TOMCAT_VERSION=8.0.41
 
 install:
