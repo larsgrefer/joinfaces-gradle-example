@@ -7,7 +7,7 @@ This repository contains example projects showing how to use [JoinFaces](https:/
 Contains:
  - `jar` packaging
  - Mojarra 2.2.x
- - Primefaces 6.0.
+ - Primefaces 6.1
 
 Usages:
  - Can be started via its `main`-method using an embedded Tomcat
@@ -17,7 +17,7 @@ Usages:
 Contains:
   - `war` packaging with
   - Mojarra 2.2.x
-  - Primefaces 6.0.
+  - Primefaces 6.1
  
 Usages:
   - Can be started via its `main`-method using an embedded Tomcat
