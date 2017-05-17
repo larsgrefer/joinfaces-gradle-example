@@ -12,12 +12,12 @@ cache:
     - $HOME/.gradle/wrapper/
 
 env:
-- TOMCAT_VERSION=8.5.11
+- TOMCAT_VERSION=8.5.15
 - TOMCAT_VERSION=8.0.41
 
 install:
 - ./gradlew clean
-- wget http://ftp.fau.de/apache/tomcat/tomcat-8/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.zip
+- wget http://archive.apache.org/dist/tomcat/tomcat-8/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.zip
 - unzip apache-tomcat-$TOMCAT_VERSION.zip
 - chmod a+x apache-tomcat-$TOMCAT_VERSION/bin/*.sh
 - apache-tomcat-$TOMCAT_VERSION/bin/catalina.sh start
@@ -25,7 +25,7 @@ install:
 script:
 - ./gradlew build
 - cp war-example/build/libs/war-example.war apache-tomcat-$TOMCAT_VERSION/webapps/
-- timeout --preserve-status 30s tail -f apache-tomcat-$TOMCAT_VERSION/logs/catalina.out || true
+- timeout --preserve-status 60s tail -f apache-tomcat-$TOMCAT_VERSION/logs/catalina.out || true
 - wget localhost:8080/war-example/index.xhtml
 - grep "Hello from Spring" index.xhtml
 
