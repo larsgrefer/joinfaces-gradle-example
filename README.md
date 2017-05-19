@@ -10,8 +10,13 @@ Contains:
  - Primefaces 6.1
 
 Usages:
- - Can be started via its `main`-method using an embedded Tomcat
- - Can be tested using `@SpringBootTest(webEnvironment = RANDOM_PORT)`
+  - Can be started via its `main`-method using an embedded Tomcat
+    - Using `java -jar`
+    - Using `./gradlew jar-example:bootRun`
+    - Using your IDE
+  - Can be tested using `@SpringBootTest(webEnvironment = RANDOM_PORT)`
+    - Using `./gradlew jar-example:test`
+    - Using your IDE
  
 ### `war-example`
 Contains:
@@ -20,6 +25,11 @@ Contains:
   - Primefaces 6.1
  
 Usages:
-  - Can be started via its `main`-method using an embedded Tomcat
   - Can be deployed to an existing Tomcat (see travis tests)
+  - Can be started via its `main`-method using an embedded Tomcat
+    - _Using `java -jar`_ (?)
+    - Using `./gradlew jar-example:bootRun`
+    - Using your IDE
   - Can be tested using `@SpringBootTest(webEnvironment = RANDOM_PORT)`
+    - Using `./gradlew war-example:test`
+    - Using your IDE
