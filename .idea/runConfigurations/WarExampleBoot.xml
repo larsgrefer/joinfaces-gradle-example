@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="WarExampleBoot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="org.joinfaces.example.WarExampleApplication" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <module name="war-example" />
+    <envs />
+    <method />
+  </configuration>
+</component>
