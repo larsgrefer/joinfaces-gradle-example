@@ -1,4 +1,4 @@
-package org.joinfaces.example;
+package de.larsgrefer.joinfaces.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
