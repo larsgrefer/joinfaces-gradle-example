@@ -1,4 +1,4 @@
-package org.joinfaces.example;
+package de.larsgrefer.joinfaces.example;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
