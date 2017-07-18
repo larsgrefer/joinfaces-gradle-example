@@ -1,11 +1,11 @@
 plugins {
     id "java"
-    id "org.springframework.boot" version "1.5.3.RELEASE"
+    id "org.springframework.boot" version "1.5.4.RELEASE"
     id "checkstyle"
 }
 
 dependencies {
-    compile "org.joinfaces:jsf-spring-boot-starter:2.3.9"
+    compile "org.joinfaces:jsf-spring-boot-starter:2.4.0"
 
     testCompile "org.springframework.boot:spring-boot-starter-test"
 }
